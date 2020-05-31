@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	<a href="photography.html" class="navbar-brand"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Vink.Photography</a>
+	</div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+	<ul class="nav navbar-nav">
+	<li><a href="client.html">Client Galleries</a></li>
+	<li><a href="blog.html">Contact</a></li>
+	</ul>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="log-in.html"> Already a Client?</a></li>
+		<li><a href="registrationform.html"> Sign up </a></li>
+
+	</ul>
+	</div>
+	</div>
+	</nav>
+	<!-- <a href="https://www.w3schools.com/html/">next page</a> -->
+	<h1>Register</h1>
+
+<form>
+	<label for ="first">First Name</label>
+	<input type="text" placeholder="Vatsal" name="first" id="first" required>
+	<label for="last">Last Name</label>
+<input type="text" placeholder="Kadakia" id="last" name="last" required>
+<div>
+	<label for="Male">Male</label>
+<input id="Male" name="gender" type="radio" value="Male">
+<label for="Female">Female</label>
+<input id="Female" name="gender" type="radio" value="Female">
+<label for="Other">Other</label>
+<input id="Other" name="gender" type="radio" value="Other">
+</div>
+<div>
+	<label>
+		Email:
+	<input type="email" name="email" placeholder="your email" required>
+	</label>
+	<label>
+		Password:
+	<input type="password" name="password" placeholder="password" pattern=".{5,10}"  required title="5 to 10 characters">
+
+	</label>
+</div>
+<div>
+	<label>
+		Birthday:
+	<select name="Month">
+		<option>Month</option>
+		<option>Jan</option>
+		<option>Feb</option>
+		<option>March</option>
+	</select>
+	<select name="Day">
+		<option>Day</option>
+		<option>10</option>
+		<option>11</option>
+		<option>12</option>
+	</select>
+	<select name="Year">
+		<option>Year</option>
+		<option>1999</option>
+		<option>2000</option>
+		<option>2001</option>
+	</select>
+</label>
+</div>
+<div>
+	<label for="agreed">I agree to the terms and conditions:</label>
+	<input type="checkbox" name="agreed" id="agreed">
+</div>
+
+<input type="submit" style="color:black;">
+</form>
+<script
+	  src="http://code.jquery.com/jquery-3.5.1.js"
+	  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	  crossorigin="anonymous">
+
+	</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
